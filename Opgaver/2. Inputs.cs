@@ -28,8 +28,6 @@ namespace Opgaver
             // Lav opgaven herunder!
             string input = Console.ReadLine() ?? "";
             Console.WriteLine(input);
-
-            string s = Console.ReadLine();
         }
 
         public static void Int1()
