@@ -80,13 +80,14 @@ namespace Opgaver
             // Lav opgaven herunder!
 
             Console.Write("Navn: ");
-            string name = Console.ReadLine() ?? "";
+            string name = Console.ReadLine()!;
 
             Console.Write("Alder: ");
-            int age = int.Parse(Console.ReadLine() ?? "0");
-
+            int age = int.Parse(Console.ReadLine()!);
+            
             Console.Write("Hjemby: ");
-            string city = Console.ReadLine() ?? "";
+            string city = Console.ReadLine()!;
+
 
             Console.WriteLine($"Hej, jeg hedder {name}, er {age} år gammel og kommer fra {city}!");
         }

@@ -157,7 +157,8 @@ namespace Opgaver
             avrGrade /= grades.Length;
 
             Console.WriteLine($"Du fik {avrGrade} i gennemsnit");
-            
+
+                        
         }
     }
 }
