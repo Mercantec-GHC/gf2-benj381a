@@ -14,7 +14,7 @@ namespace Opgaver.AD
         {
             LdapConnection conn = NewConnectionToServer();
             conn.Bind();
-            foreach (ADGroup group in GetAllGroups())
+            foreach (ADUser group in GetAllUsers())
             {
                 Console.WriteLine(group.Name);
             }
