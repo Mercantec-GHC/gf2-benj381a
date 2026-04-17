@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using Opgaver.AD;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Opgaver
 {
@@ -45,6 +46,9 @@ namespace Opgaver
                         break;
                     case "10":
                         Banko.Run();
+                        break;
+                    case "11":
+                        ADProgram.Run();
                         break;
                     case "!":
                         run = false;
