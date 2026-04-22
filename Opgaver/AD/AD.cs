@@ -212,6 +212,7 @@ namespace Opgaver.AD
                 checkinList.OpenSelectedItem += (args) =>
                 {
                     string user = users.AsEnumerable()
+                            .Where(row => row.Field<bool>("Checked in") == false)
                             .Select(row => row.Field<string>("Name"))
                             .Where(val => (val ?? "").ToLower().StartsWith((string)checkinTextField.Text.ToLower()))
                             .ToList()
@@ -273,6 +274,7 @@ namespace Opgaver.AD
                 checkoutList.OpenSelectedItem += (args) =>
                 {
                     string user = users.AsEnumerable()
+                            .Where(row => row.Field<bool>("Checked in") == true)
                             .Select(row => row.Field<string>("Name"))
                             .Where(val => (val ?? "").ToLower().StartsWith((string)checkoutTextField.Text.ToLower()))
                             .ToList()
