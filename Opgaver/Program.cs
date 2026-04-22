@@ -81,6 +81,7 @@ namespace Opgaver
             Console.WriteLine("8: Sten, Saks, Papir projektet");
             Console.WriteLine("9: Binær/Decimal konvertering");
             Console.WriteLine("10: Banko!");
+            Console.WriteLine("11: AD");
             Console.WriteLine("!: Afslut");
             Console.WriteLine("?: For overblik over opgaverne");
             Console.Write("Indtast dit valg: ");
